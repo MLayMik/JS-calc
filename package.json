@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "tailwind": "tailwindcss build ./src/css/input.css -o ./public/output.css"
+    "tailwind": "tailwindcss build ./src/input.css -o ./public/output.css"
   },
   "author": "",
   "license": "ISC",
