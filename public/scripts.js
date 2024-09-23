@@ -11,7 +11,7 @@ function addToDisplay(input) {
 function calculate() {
 	try { display.value = eval(display.value) }
 	catch (error) {
-		display.value = 'NIGGA'
+		display.value = 'u wrong'
 	}
 }
 function clearForm() {
