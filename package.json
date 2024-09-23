@@ -1,0 +1,14 @@
+{
+  "name": "js-calc",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "tailwindcss build ./src/css/input.css -o ./public/output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.4.12"
+  }
+}
