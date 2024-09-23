@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+	<div class="bg-purple-900 min-h-screen flex items-center justify-center">
+		<div class="bg-gray-800 rounded-3xl p-5 max-w-[350px]">
+			<!-- Дисплей калькулятора -->
+			<input readonly id="result" class="bg-gray-900 text-right text-white text-5xl rounded-md h-16 p-4 mb-6 w-full">
+
+
+			<!-- Кнопки калькулятора -->
+			<div class="grid grid-cols-4 gap-4">
+				<!-- Первая строка -->
+				<button onclick="clearForm()" id="clear" class="bg-purple-600 text-white rounded-full size-16">CE</button>
+				<button onclick="clearForm()" id="reset" class="bg-gray-700 text-white rounded-full size-16">C</button>
+				<button onclick="addToDisplay('%')" id="percent" class="bg-gray-700 text-white rounded-full size-16">%</button>
+				<button onclick="addToDisplay('/')" id="divide" class="bg-purple-600 text-white rounded-full size-16">÷</button>
+
+				<!-- Вторая строка -->
+				<button onclick="addToDisplay('7')" id="seven" class="bg-gray-700 text-white rounded-full size-16">7</button>
+				<button onclick="addToDisplay('8')" id="eight" class="bg-gray-700 text-white rounded-full size-16">8</button>
+				<button onclick="addToDisplay('9')" id="nine" class="bg-gray-700 text-white rounded-full size-16">9</button>
+				<button onclick="addToDisplay('*')" id="multiply"
+					class="bg-purple-600 text-white rounded-full size-16">×</button>
+
+				<!-- Третья строка -->
+				<button onclick="addToDisplay('4')" id="four" class="bg-gray-700 text-white rounded-full size-16">4</button>
+				<button onclick="addToDisplay('5')" id="five" class="bg-gray-700 text-white rounded-full size-16">5</button>
+				<button onclick="addToDisplay('6')" id="six" class="bg-gray-700 text-white rounded-full size-16">6</button>
+				<button onclick="addToDisplay('-')" id="subtract"
+					class="bg-purple-600 text-white rounded-full size-16">−</button>
+
+				<!-- Четвертая строка -->
+				<button onclick="addToDisplay('1')" id="one" class="bg-gray-700 text-white rounded-full size-16">1</button>
+				<button onclick="addToDisplay('2')" id="two" class="bg-gray-700 text-white rounded-full size-16">2</button>
+				<button onclick="addToDisplay('3')" id="three" class="bg-gray-700 text-white rounded-full size-16">3</button>
+				<button onclick="addToDisplay('+')" id="add" class="bg-purple-600 text-white rounded-full size-16">+</button>
+
+				<!-- Пятая строка -->
+				<button id="negate" class="bg-gray-700 text-white rounded-full size-16"></button>
+				<button onclick="addToDisplay('0')" id="zero" class="bg-gray-700 text-white rounded-full size-16">0</button>
+				<button onclick="addToDisplay('.')" id="decimal" class="bg-gray-700 text-white rounded-full size-16">.</button>
+				<button onclick="calculate()" id="equals" class="bg-purple-600 text-white rounded-full size-16">=</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="scripts.js"></script>
+</body>
+
+</html>
